@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kumu's Kitchen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./static/css/w3.css">
+        <link rel="stylesheet" href="./static/css/kk.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+        <style>
+            body,
+            html {
+                height: 100%
+            }
+
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: Bradley Hand;
+            }
+
+            .menu {
+                display: none
+            }
+
+            .bgimg {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url("./static/images/white-n-red-sauce-lasagna.jpg");
+                min-height: 90%;
+            }
+        </style>
+    </head>
+
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top w3-hide-small">
+      <div class="w3-bar w3-xlarge w3-red w3-hover-opacity-off" id="myNavbar">
+          <a href="./Home2.html" class="w3-bar-item w3-button">Home</a>
+          <a href="./Home2.html#menu" class="w3-bar-item w3-button">Receipe Catalog</a>
+          <a href="./Home2.html#about" class="w3-bar-item w3-button">About</a>
+          <a href="./Home2.html#myMap" class="w3-bar-item w3-button">Contact</a>
+      </div>
+  </div>
+
+
+<!-- -->
+
+<div>
+./static/images/kiribath.jpg
+</div>
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-xlarge">
+    <div class="w3-content">
+
+        <img src="./static/images/white-n-red-sauce-lasagna.jpg" style="width:100%">
+
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Ingredients & Directions</h1>
+        <br/>
+        <h2 class="w3-center" style="margin-bottom:10px; font-size: 40px">Kiribath - Ingredients</h1>
+          <ul>
+            <li>1 ½ cups cups uncooked short-grain rice (such as kekulu haal, white Calrose, or white jasmine)</li>
+            <li>3 cups water, plus more for rinsing rice</li>
+            <li>2 cardamom pods (optional)</li>
+            <li>1 (13 1/2 -ounce) can coconut milk, well shaken and stirred</li>
+            <li>½ teaspoon kosher salt</li>
+          </ul>
+        <h2 class="w3-center" style="margin-bottom:10px; font-size: 40px">Kiribath - Directions</h1>
+        <p>
+          Place rice in a medium saucepan; add water to cover. Swirl rice to rinse, and drain. Repeat process twice, pouring off as much water as possible. Add 3 cups water and cardamom, if using, to rice; bring to a boil over high. Reduce heat to low; cover and cook until water is mostly absorbed, about 15 minutes.
+          <br/>
+          Uncover rice; stir in coconut milk and salt. Cook over low, stirring often, until coconut milk is mostly absorbed and mixture is creamy and thick, about 5 minutes. Discard cardamom. Transfer rice to a platter or baking sheet; top with a piece of parchment paper.
+          Spread rice into a 1 1/2-inch-thick rectangle; use a spatula to flatten top.
+          Let cool at room temperature until set, about 5 minutes. Remove parchment paper; cut rice into 3-inch squares or diamonds.
+
+        </p>
+
+        <h2 class="w3-center" style="margin-bottom:10; font-size: 40px">Lunu miris (Chili paste/Sambal)</h1>
+          <ul>
+            <li>2 cups finely chopped red onion, divided</li>
+            <li>1 ½ tablespoons finely chopped fresh red cayenne chile</li>
+            <li>2 tablespoons fresh lime juice, divided</li>
+            <li>1 ½ teaspoons kosher salt, divided</li>
+            <li>½ teaspoon Kashmiri chile powder or ¼  teaspoon cayenne pepper</li>
+            <li>¼ teaspoon ground turmeric</li>
+            <li>¼ teaspoon cracked black pepper</li>
+          </ul>
+        <p>
+          Place 1 cup onion in a medium bowl; set aside. Using a mortar and pestle, mash together fresh chile, 1 tablespoon lime juice, 1 teaspoon salt, chile powder, turmeric, and remaining 1 cup onion until mixture is crushed and well combined. Add to onion in bowl; stir in cracked black pepper, remaining 1 tablespoon lime juice, and remaining 1/2 teaspoon salt. Serve with kiribath.
+        </p>
+
+
+
+    </div>
+</div>
+
+<!-- -->
+
+
+
+  <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p class="w3-large">© 2023 Kumu's Kitchen. All rights reserved.</p>
+  </footer>
+
+  <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("menu");
+          for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+          }
+          document.getElementById(menuName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-red";
+      }
+      document.getElementById("myLink").click();
+  </script>
+
+</body>
+
+</html>

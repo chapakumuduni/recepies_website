@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kumu's Kitchen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./static/css/w3.css">
+        <link rel="stylesheet" href="./static/css/kk.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+        <style>
+            body,
+            html {
+                height: 100%
+            }
+
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: Bradley Hand;
+            }
+
+            .menu {
+                display: none
+            }
+
+            .bgimg {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url("./static/images/kiribath.jpg");
+                min-height: 90%;
+            }
+        </style>
+    </head>
+
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-red w3-hover-opacity-off" id="myNavbar">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#menu" class="w3-bar-item w3-button">Receipe Catalog</a>
+            <a href="#about" class="w3-bar-item w3-button">About</a>
+            <a href="#myMap" class="w3-bar-item w3-button">Contact</a>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container" id="home">
+        <div class="w3-display-bottomleft w3-padding">
+            <span class="w3-tag w3-xlarge">For your delicious dishes, here's our recipies..</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-red w3-hide-small" style="font-size:100px">Kumu's Kitchen</span>
+            <span class="w3-text-red w3-hide-large w3-hide-medium" style="font-size:60px"><b>Kumu's Kitchen</b></span>
+            <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Find a recipie..</a></p>
+        </div>
+    </header>
+
+    <!-- Menu Container -->
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE RECIPIE CATALOG</h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Appetizer');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">APPETIZERS</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Mains');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">MAINS</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">DESSERTS</div>
+                </a>
+            </div>
+
+            <div id="Appetizer" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b> <a href="./green-goddess-recipie.html"> Green Goddess Salad </a> </b></h1>
+                <div class="row">
+                  <div class="thumbnail"  style="height:100px;">
+                    <a target="_blank" href="./static/images/green-goddess-salad.jpg">
+                      <img src="./static/images/green-goddess-salad.jpg" alt="Kiribath" style="width:150px">
+                    </a>
+                    <br/>
+                  </div>
+                  <div>
+                    <p style="font-size: 25px">This is the ultimate salad! It’s refreshing, crunchy, filling and it stores beautifully in the refrigerator! To make the preparation easier, chop celery and green cabbage by pulsing them a few times in a food processor</p>
+                  </div>
+                </div>
+
+                <p class="w3-text-grey" style="font-size: 25px">Vege</p>
+
+                <hr>
+
+                <h1><b> <a href="./fermented-beet-recepie.html"> Fermented Beets </a> </b> </h1>
+                <div class="row">
+                  <div class="thumbnail"  style="height:100px;">
+                    <a target="_blank" href="./static/images/fermented-beets.jpg">
+                      <img src="./static/images/fermented-beets.jpg" alt="Kiribath" style="width:150px">
+                    </a>
+                    <br/>
+                  </div>
+                  <div>
+                    <p style="font-size: 25px">AThe tangy-salty fermented beets are delicious, well worth waiting a week for. You can use your dishwasher to sterilize the jars, tools, lids, and equipment. Be sure to store the fermented beets in the refrigerator and that the beets are always fully submerged in their brining liquid</p>
+                  </div>
+                </div>
+                <p class="w3-text-grey" style="font-size: 25px">Vege</p>
+
+                <hr>
+
+            </div>
+
+            <div id="Mains" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b> <a href="./kiribath-recipie.html"> Kiribath </a> </b>
+                  <span class="w3-tag w3-grey w3-round">Popular</span>
+                </h1>
+
+                <div class="row">
+                  <div class="thumbnail"  style="height:100px;">
+                    <a target="_blank" href="./static/images/kiribath.jpg">
+                      <img src="./static/images/kiribath.jpg" alt="Kiribath" style="width:150px">
+                    </a>
+                    <br/>
+                  </div>
+                  <div>
+                    <p style="font-size: 25px">A traditional Sri Lankan cuisine, prepared with rice and coconut. and eat together with chili past or spicy fish/chicken curry</p>
+                  </div>
+                </div>
+
+                <p class="w3-text-grey style="font-size: 25px"">Sri Lakan, Vege and Non-Vege options</p>
+                <hr>
+
+
+                <h1><b> <a href="./lasagna-recipie.html"> Lasagna </a> </b> </h1>
+                <p class="w3-text-grey" style="font-size: 25px">Italian, Non Vege</p>
+
+                <div class="row">
+                  <div class="thumbnail"  style="height:100px;">
+                    <a target="_blank" href="./static/images/white-n-red-sauce-lasagna.jpg">
+                      <img src="./static/images/white-n-red-sauce-lasagna.jpg" alt="Kiribath" style="width:150px">
+                    </a>
+                    <br/>
+                  </div>
+                  <div>
+                    <p style="font-size: 25px">The ultimate Lasagna for italian food lovers</p>
+                  </div>
+                </div>
+                <hr>
+
+                <h1><b>Cheesy Pasta and Bean Casserole</b>
+                <p class="w3-text-grey" style="font-size: 25px">Non Vege</p>
+
+                <div class="row">
+                  <div class="thumbnail"  style="height:100px;">
+                    <a target="_blank" href="./static/images/cheesy-pasta-and-bean-casserole.jpg">
+                      <img src="./static/images/cheesy-pasta-and-bean-casserole.jpg" alt="Kiribath" style="width:150px">
+                    </a>
+                    <br/>
+                  </div>
+                  <div>
+                    <p style="font-size: 25px">Easy peasy yet delicious Pasta Casserole</p>
+                  </div>
+                </div>
+                <hr>
+            </div>
+
+
+            <div id="Desserts" class="w3-container menu w3-padding-32 w3-white">
+                <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span>
+                <p class="w3-text-grey" style="font-size: 25px">Vege</p>
+                <hr>
+
+                <h1><b>Bruschetta</b>
+                <p class="w3-text-grey" style="font-size: 25px">Vege</p>
+            </div><br>
+
+        </div>
+    </div>
+
+    <!-- About Container -->
+    <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+            <p>
+              I am Kumuduni, experienced in many dishes arround the globe, and I have received complements for them. It is a great pleasure to me sharing of my knowledge with you!
+              <br/> <br/>
+              Kumu's Kitchen is a collection of recipies.
+              We offer you recipies especailly Sri lankan, Italian, Western, Mexican, Thai. keep in touch with us over our social media channels to stay uptodate with the latest recipies.
+              <br/>
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+            <p>Connect with us over our social-media platforms, to stay uptodate with our latest recipies</p>
+
+            <h2>For any enquiries:</h2>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name">
+                </p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your email" required
+                        name="People"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+                <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND</button></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+    <p class="w3-large">© 2023 Kumu's Kitchen. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-red";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
